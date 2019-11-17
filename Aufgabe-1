@@ -1,0 +1,73 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Nov 15 16:09:30 2019
+
+@author: Winnie Lam
+"""
+
+def Bonuspunkte():
+    Anzahl = int(input("Anzahl der Blätter insgesamt: "))
+    list = [];
+    Blatt_1 = input("Punktzahl Blatt 1: ")
+    if Blatt_1 >= 25:
+        list.append(Blatt_1)
+            
+    Blatt_2 = int(input("Punktzahl Blatt 2: "))
+    if Blatt_2 >= 25:
+        list.append(Blatt_2)
+            
+    Blatt_3 = int(input("Punktzahl Blatt 3: "))
+    if Blatt_3 >= 25:
+        list.append(Blatt_3)
+            
+    Blatt_4 = int(input("Punktzahl Blatt 4: "))
+    if Blatt_4 >= 25:
+        list.append(Blatt_4)
+            
+    Blatt_5 = int(input("Punktzahl Blatt 5: "))
+    if Blatt_5 >= 25:
+        list.append(Blatt_5)
+            
+    Blatt_6 = int(input("Punktzahl Blatt 6: "))
+    if Blatt_6 >= 25:
+        list.append(Blatt_6)
+            
+    Blatt_7 = int(input("Punktzahl Blatt 7: "))
+    if Blatt_7 >= 25:
+        list.append(Blatt_7)
+            
+    Blatt_8 = int(input("Punktzahl Blatt 8: "))
+    if Blatt_8 >= 25:
+        list.append(Blatt_8)
+        
+    Blatt_9 = int(input("Punktzahl Blatt 9: "))
+    if Blatt_9 >= 25:
+        list.append(Blatt_9)
+        
+    Blatt_10 = int(input("Punktzahl Blatt 10: "))
+    if Blatt_10 >= 25:
+        list.append(Blatt_10)
+        
+    Blatt_11 = int(input("Punktzahl Blatt 11: "))
+    if Blatt_11 >= 25:
+        list.append(Blatt_11)
+        
+    Blatt_12 = int(input("Punktzahl Blatt 12 (falls nicht vorhanden: 0): "))
+    if Blatt_12 >= 25:
+        list.append(Blatt_12)
+        
+    Blatt_13 = int(input("Punktzahl Blatt 13(falls nicht vorhanden: 0): "))
+    if Blatt_13 >= 25:
+        list.append(Blatt_13)
+        
+    Summe = sum(list);
+    print (Summe)
+    Prozent = Summe/Anzahl;
+    print (Prozent)
+    Gesamtpunkte = round(Prozent*0.15);
+    print(Gesamtpunkte)
+    Bonuspunkte = Gesamtpunkte-5;
+    print(Bonuspunkte)
+
+
+Bonuspunkte();
